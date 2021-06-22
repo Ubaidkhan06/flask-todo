@@ -10,26 +10,26 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-    <title>My Todo</title>
+    <title>My To-do</title>
 </head>
 
 <body style="background-color: #FFDCDA;">
     <nav style="background-color: #DAFDFF;" class="navbar">
         <div class="container-fluid">
-            <a class="navbar-brand text-dark" href="/">MY TODO'S</a>
+            <a class="navbar-brand text-dark" href="/">MY TO-DO'S</a>
         </div>
     </nav>
     <div style='border-radius: 20px;' class="card shadow my-2 mx-5">
-        <h1 style="background-color: #DAFDFF;border-radius: 20px;" class="card-header fw-light">Add Your Todo</h1>
+        <h1 style="background-color: #DAFDFF;border-radius: 20px;" class="card-header fw-light">Add Your To-do</h1>
 
         <div class="card-body">
             <form action='/' method="POST">
                 <div class="mb-3">
-                    <label for="title" class="form-label">Todo Title</label>
+                    <label for="title" class="form-label">To-do Title</label>
                     <input name="title" id='title' class="form-control" required>
                 </div>
                 <div class="mb-3">
-                    <label for="description" class="form-label">Todo Description</label>
+                    <label for="description" class="form-label">To-do Description</label>
                     <input name="description" id="decription" class="form-control" required>
                 </div>
                 <button type="submit" class="btn btn-outline-dark">Submit</button>
@@ -39,11 +39,11 @@
     </div>
 
     <div style='border-radius: 20px;' class="card shadow mx-5 my-2">
-        <h1 style="background-color: #DAFDFF;border-radius: 20px;" class="card-header fw-light">Your Todos</h1>
+        <h1 style="background-color: #DAFDFF;border-radius: 20px;" class="card-header fw-light">Your To-do's</h1>
 
         {% if alltodo|length == 0 %}
         <div class="alert alert-success mx-4 my-4" role="alert">
-            No Todos Found Add Your First Todo!!!!!!
+            No To-do's Found Add Your First To-do!!!!!!
         </div>
         {% else %}
         <div class="card-body">
